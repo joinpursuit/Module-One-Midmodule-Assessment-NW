@@ -7,7 +7,7 @@ function evenNumbers() {
 }
 
 /** Returns all multiples of a given number up to 1000
- * Example if num was 3 the output would be [0, 3, 6, 9, 12, ...etc ] until 1000
+ * Example if num was 3 the output would be [0, 3, 6, 9, 12, ..., 999]
 * @param {number} num - The number to find multiples of
 * @returns {number[]} - An array of all multiples of {num} up to 1000
 */
