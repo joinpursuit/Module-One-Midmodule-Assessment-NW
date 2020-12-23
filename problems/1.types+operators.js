@@ -13,7 +13,9 @@ let val = 1
 * @returns {boolean} - Is val truthy
 */
 function isTruthy(val) {
-
+ 
+  return true 
+  
 }
 
 

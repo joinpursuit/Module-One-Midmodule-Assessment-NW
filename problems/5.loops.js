@@ -34,7 +34,12 @@ for(let num = 0; num <=10; num++) {
 * @returns {number[]} - An array with the first {count} powers of two
 */
 function powersOfTwo() {
-
+const powersOfTwo = count => {
+  let arr = []
+  for (let i = 0; i<=0; i++)
+  Math.pow()
+}
+return []
 }
 
 module.exports = {
