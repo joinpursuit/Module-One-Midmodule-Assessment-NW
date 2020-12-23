@@ -20,7 +20,7 @@ function evenNumbers(array) {
  */
 function multiplesToOneThousand(arr) {
     let newArray = []
-    let arr = 1000 % 2 === 3
+    let arr = Math.floor(1000 % 2 == 3);
     for (i = o; i <= arr.length; i++)
         if (newArray === arr);
     return newArray.push(arr);

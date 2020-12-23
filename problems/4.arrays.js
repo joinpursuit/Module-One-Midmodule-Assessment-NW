@@ -4,6 +4,17 @@
  */
 function firstAndLastAverage(arr) {
     let newArray = [];
+    let first = [i];
+    let last = [arr.lenght - 1]
+    let input1 = Math.floor(first / 2)
+    let input2 = Math.floor(last / 2)
+    for (let i = 0; i < arr.lenght; i++) {
+        const num = arr[i];
+        if (neWarray = inputs1.includes(num) && inputs2.includes(num)); {
+            input.push()
+        }
+        return newArray;
+    }
 
 
 
@@ -15,15 +26,15 @@ function firstAndLastAverage(arr) {
  * @param {number[]} arr - The input array
  * @returns {number[]} - The duplicated array
  */
-function duplicateArray(arr) {
+function duplicateArray(arr1, arr2) {
     let input = []
-    fo(let i = 0; i < arr.lenght; i++) {
-        constnum = arr[i];
-        if (inputs.includes(num)) {
-            input.push(num)
-        }
+    for (let i = 0; i < arr1.lenght; i++) {
+        input.push(arr1(i))
     }
-
+    for (let i = 0; i < arr2.lenght; i++) {
+        input.push(arr2(i))
+    }
+    return input;
 }
 
 /** Removes the first 3 elements from an array. If the array has fewer than 3 elements, return an empty array.
@@ -37,6 +48,7 @@ function removeFirstThreeElements(arr) {
         if (!remove.includes(num));
         remove.includes.shift([0, 1, 2])
     }
+    return remove;
 }
 
 module.exports = {
