@@ -23,12 +23,12 @@ const firstAndLastAverage = (arr) => {
  */
 //function duplicateArray() {}
 const duplicateArray = (arr) => {
-  // let newArr = [];
+  // let newArr = arr;
   // for(i = 0; i < arr.length; i++) {
   //   newArr.push(arr[i]);
   // }
   // return newArr;
-} // 
+}  
 
 /** Removes the first 3 elements from an array. If the array has fewer than 3 elements, return an empty array.
  * @param {any[]} arr - The input array
@@ -39,17 +39,18 @@ const removeFirstThreeElements = (arr) => {
   let newArr = [];
   let emptyArr = [];
   if (arr.length < 3){
-   return emptyArr; // how do I return an empty array?
-    //return [];
-    //return "[]";
+   console.log(emptyArr); // how do I return an empty array?
+   //return emptyArr; 
+   //return [];
+   //return "[]";
   }
 
   if (arr.length >= 3)
     for (i = 0; i < arr.length; i++) {
       newArr.push(arr.shift(i));
     }
-  //return newArr; // array with the first 3 elements 
-  return arr; // test is asking to return the modified array to pass
+  return newArr; // array with the first 3 elements 
+  //return arr; // test is asking to return the modified array to pass
 }
 
 module.exports = {

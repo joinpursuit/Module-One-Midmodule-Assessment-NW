@@ -20,11 +20,13 @@ const evenNumbers = (num) => {
  */
 //function multiplesToOneThousand() {}
 const multiplesToOneThousand = (num) => {
-  let multiplesArr = [0, num];
+  let sum = 0;
+  let multiplesArr = [0];
   loop = Math.floor(999 / num);
-  for (i = 0; i < loop - 2; i++) {
-    if ((num += num < 999)) {
-      multiplesArr.push((num += num));
+  for (i = 0; i < loop; i++) {
+    sum += num;
+    if ((sum < 999)) {
+      multiplesArr.push((sum));
     }
   }
   return multiplesArr;

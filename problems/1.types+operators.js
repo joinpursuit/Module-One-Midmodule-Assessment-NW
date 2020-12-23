@@ -13,7 +13,7 @@ const isNumber = (val) => {
 */
 //function isTruthy() {}
 const isTruthy =(val) => {
-  return (typeof val) ? true : false;
+  return val ? true : false;
 }
 
 module.exports = {
