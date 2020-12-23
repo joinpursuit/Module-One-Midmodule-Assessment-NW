@@ -10,8 +10,11 @@ function isNumber(val) {
 * @param {any} val - The input value
 * @returns {boolean} - Is val truthy
 */
-function isTruthy() {}
-
+function isTruthy(val) {
+  if(val) {
+    return true 
+  } else return false
+}
 
 module.exports = {
   isNumber,
