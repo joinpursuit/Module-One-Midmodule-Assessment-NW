@@ -2,7 +2,14 @@
 * @param {number} temp - The current temperature
 * @returns {string} - A message about the temperature
 */
-function temperatureMessage() {
+function temperatureMessage(temp) {
+  let temp = 32
+  let i = 0 
+  if (i <= temp) {
+    console.log("It's freezing!")
+  } else {
+    console.log ("It's alright")
+  }
 
 }
 
@@ -10,8 +17,10 @@ function temperatureMessage() {
 * @param {number} temp - The current temperatur
 * @returns {string} - A message about the temperature
 */
-function temperatureMessageUsingTernary() {
-
+function temperatureMessageUsingTernary(temp) {
+let temp = 32 
+let i = num > 32
+return i <= temp ? "It's freezing!" : "It's alright"
 }
 
 
@@ -19,8 +28,14 @@ function temperatureMessageUsingTernary() {
 * @param {number} age - The age of the user
 * @returns {string} - A message about their age
 */
-function ageMessage() {
-
+function ageMessage(age) {
+if (age >= 65) {
+  return "You are a senior "
+} else if (age >= 18){
+  return "You are an adult"
+} else {
+  return "You are a minor"
+}
 }
 
 module.exports = {
