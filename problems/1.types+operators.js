@@ -2,15 +2,20 @@
 * @param {any} val - The input value
 * @returns {boolean} - Is val a number
 */
-function isNumber() {
-
+const isNumber = (val) => {
+  let(val < 23)
+return "is val a number"
 }
+
+
 
 /** Takes in a value and returns whether it is truthy
 * @param {any} val - The input value
 * @returns {boolean} - Is val truthy
 */
-function isTruthy() {
+function isTruthy(val) {
+  let(val + 0 === 0)
+  return "Is val truthy"
 
 }
 
