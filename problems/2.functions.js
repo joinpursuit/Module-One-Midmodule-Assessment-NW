@@ -2,7 +2,8 @@
 * @param {string} name - The name of the user to greet
 * @returns {null}
 */
-function logGreeting() {
+const logGreeting = (name) =>{
+  console.log("Hello " + name + "!")
 
 }
 
@@ -10,7 +11,8 @@ function logGreeting() {
 * @param {string} name - The name of the user to greet
 * @returns {string} - The custom greeting
 */
-function greeting() {
+const greeting = (name) => {
+  return "Hello " + name + "!"
 
 }
 
@@ -20,7 +22,8 @@ function greeting() {
 * @returns {null}
 * @modifies {global.globalCount}
 */
-function incrementGlobalCount() {
+const incrementGlobalCount = (val) =>{
+  global.globalCount = val;
 
 }
 /** Multiplies three numbers
@@ -29,7 +32,8 @@ function incrementGlobalCount() {
 * @param {number} thirdNum - The third number
 * @returns {number} - The product of the three numbers
 */
-function multiply() {
+const multiply = (firstNum, secondNum, thirdNum) => {
+  return firstNum * secondNum * thirdNum
 
 }
 
