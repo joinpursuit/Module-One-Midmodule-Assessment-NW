@@ -2,7 +2,10 @@
 * @param {any} val - The input value
 * @returns {boolean} - Is val a number
 */
-function isNumber() {
+function isNumber(any) {
+  return typeOf (any) && "val"
+
+  
 
 }
 
@@ -10,7 +13,9 @@ function isNumber() {
 * @param {any} val - The input value
 * @returns {boolean} - Is val truthy
 */
-function isTruthy() {
+function isTruthy(any) {
+  let(any === 0);
+  return any
 
 }
 
