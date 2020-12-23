@@ -2,8 +2,10 @@
 * @param {number[]} arr - The input array
 * @returns {number} - The average of the first and last values
 */
-function firstAndLastAverage() {
-
+function firstAndLastAverage(arr) {
+  if(arr.length >= 2) {
+    return (arr[0] + arr[arr.length -1])/2
+  } else return null 
 }
 
 /** Duplicates all values inside an array.
