@@ -3,6 +3,7 @@
 * @param {number[]} - An array of even numbers from 0 to {num}
 */
 function evenNumbers() {
+  let num
 
 }
 
