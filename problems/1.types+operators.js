@@ -18,9 +18,9 @@ function isNumber(val) {
 function isTruthy(val) {
   if (typeof val === "0"){
     return false
-  }else if( typeof val === "false"){
+  }else if(typeof  val === "false"){
     return false
-  }else if(typeof val === ""){
+  }else if( typeof val === ""){
     return false
   }else if(typeof val === "NaN"){
     return false
@@ -28,12 +28,12 @@ function isTruthy(val) {
     return false
   }else if (typeof val === "undefined"){
     return false
-  }else {
+  }else if (typeof val !== "0" || typeof  val === "false" || typeof val === "" || typeof val === "NaN" || typeof val === "null" || typeof val === "undefined"  ){
     return true
   }
-  }
+}
 
-  console.log(isTruthy(null))
+  console.log(isTruthy(undefined))
 
 
 

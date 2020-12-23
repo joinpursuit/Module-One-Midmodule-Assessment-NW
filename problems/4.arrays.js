@@ -20,10 +20,15 @@ console.log(firstAndLastAverage([2,3,4,5]))
 * @returns {number[]} - The duplicated array
 */
 function duplicateArray(arr) {
-  let arr2=[]
-  arr.concat(arr2)
-  console.log(arr2)
+  let arr2 =arr.slice(0)
+  return arr.concat(arr2)
+  //for(let i= 0; i<arr2.length; i++){
+   // arr2.push(arr[0])
+ // }
+ 
 }
+
+console.log(duplicateArray[1,2,3,4])
 
 /** Removes the first 3 elements from an array. If the array has fewer than 3 elements, return an empty array.
 * @param {any[]} arr - The input array
