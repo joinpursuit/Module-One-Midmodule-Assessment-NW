@@ -2,7 +2,11 @@
 * @param {number[]} arr - The input array
 * @returns {number} - The average of the first and last values
 */
-function firstAndLastAverage() {
+function firstAndLastAverage(arr) {
+ let totalaverage = [arr[arry.length -1]]
+ return arry.length[0] / 2;
+
+
 
 }
 
@@ -12,7 +16,14 @@ function firstAndLastAverage() {
 * @param {number[]} arr - The input array
 * @returns {number[]} - The duplicated array
 */
-function duplicateArray() {
+function duplicateArray(array) {
+  array = []
+  arraysCopy = [];
+  i = -1;
+  while (++i < array.length){
+    arrayCopy[i] = array[i];
+  }
+
 
 }
 
@@ -20,7 +31,11 @@ function duplicateArray() {
 * @param {any[]} arr - The input array
 * @returns {any[]} - The array with the first 3 elements removed
 */
-function removeFirstThreeElements() {
+function removeFirstThreeElements(array) {
+  let array = array.length
+  return [arry.shift[0,1,2]];
+  
+
 
 }
 
