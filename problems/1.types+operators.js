@@ -15,22 +15,12 @@ function isNumber(val) {
 * @param {any} val - The input value
 * @returns {boolean} - Is val truthy
 */
-function isTruthy(val) {
-  if (typeof val === "0"){
-    return false
-  }else if(typeof  val === "false"){
-    return false
-  }else if( typeof val === ""){
-    return false
-  }else if(typeof val === "NaN"){
-    return false
-  }else if (typeof val === "null"){
-    return false
-  }else if (typeof val === "undefined"){
-    return false
-  }else if (typeof val !== "0" || typeof  val === "false" || typeof val === "" || typeof val === "NaN" || typeof val === "null" || typeof val === "undefined"  ){
+function isTruthy(val) { // remeber that truthy is not the same as true; 
+  if (val){
     return true
-  }
+  }else{
+    return false
+ }
 }
 
   console.log(isTruthy(undefined))

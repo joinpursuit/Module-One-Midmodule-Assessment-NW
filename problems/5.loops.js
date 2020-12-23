@@ -26,7 +26,7 @@ function multiplesToOneThousand(num) {
     if (i % num === 0){
       arr.push(i)
     }
-    //if (arr[i] % num ===0){
+    //if (arr[i] % num ===0){ // this does not work because this ends up looking at the specific value NOT the same as the index number 
     //  arr.push(i)
     }
   return arr
