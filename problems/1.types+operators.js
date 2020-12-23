@@ -2,7 +2,12 @@
 * @param {any} val - The input value
 * @returns {boolean} - Is val a number
 */
-function isNumber() {
+function isNumber(val) {
+  if(typeof val === "number"){
+    return true
+  }else{
+    return false
+  }
 
 }
 
@@ -10,9 +15,17 @@ function isNumber() {
 * @param {any} val - The input value
 * @returns {boolean} - Is val truthy
 */
-function isTruthy() {
-
+function isTruthy(val) { // remeber that truthy is not the same as true; 
+  if (val){
+    return true
+  }else{
+    return false
+ }
 }
+
+  console.log(isTruthy(undefined))
+
+
 
 
 module.exports = {
