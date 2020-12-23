@@ -14,7 +14,7 @@ function temperatureMessage(temp = 32) {
 * @param {number} temp - The current temperatur
 * @returns {string} - A message about the temperature
 */
-function temperatureMessageUsingTernary(temp) {
+const temperatureMessageUsingTernary = (temp) => {
       return (temp <= 31? "It's freezing!" : "It's alright");
 }
 

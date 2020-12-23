@@ -9,7 +9,7 @@ const evenNumbers = ()=>  {
     if(i <= 10 && i % 2 === 0)
     i++;
   } 
-  return arr[i];
+  return arr;
 }
 
 /** Returns all multiples of a given number up to 1000
@@ -23,7 +23,7 @@ const multiplesToOneThousand = () => {
     while (i <= 100){
       if(i % 2 !== 0 && i % 3 === 1)
       i++;
-      return arr[i];
+      return arr;
     }
 }
 
