@@ -4,7 +4,8 @@
  */
 function isNumber() {
     let val = typeof "number";
-    return true;
+    let val1 = !typeof "number";
+    return val || val1;
 
 }
 

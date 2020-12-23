@@ -3,9 +3,10 @@
  * @returns {null}
  */
 function logGreeting() {
-    let name = "Avery!";
-    console.log("Hello " + name );
-}
+    let logGreeting = "Hello Ben!"
+    console.log(logGreeting);
+};
+
 
 /** Returns a custom greeting string in the form "Hello Avery!"
  * @param {string} name - The name of the user to greet
@@ -22,10 +23,20 @@ function greeting(name = "Avery") {
  * @returns {null}
  * @modifies {global.globalCount}
  */
-function incrementGlobalCount(val) {
-    let global = []
-    return global.push(val++)
+function incrementGlobalCount() {
+    let i = 0;
+    global.globalCount = 10;
+    while(i <= 0) {
+        i++;
+        if (i === 10) {
+
+        }
+    }
+ 
 }
+
+        
+
 /** Multiplies three numbers
  * @param {number} firstNum - The first number
  * @param {number} secondNum - The second number
@@ -33,10 +44,9 @@ function incrementGlobalCount(val) {
  * @returns {number} - The product of the three numbers
  */
 
-function multiply(FirstNum, secondNum, thirdNum) {
-    let sumofaguments = (firstNum + secondNum + thirdNum)
-    let numarg = 3
-    return sumofaguments * numarg;
+function multiply(a, b, c) {
+return a * b * c;
+
 }
 
 module.exports = {
