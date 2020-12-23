@@ -3,7 +3,7 @@
 * @returns {string} - A message about the temperature
 */
 function temperatureMessage(temp) {
-  if(temp < 32) {
+  if (temp < 32) {
     return "It's freezing!"
   } else {
     return "It's alright"
@@ -24,13 +24,13 @@ function temperatureMessageUsingTernary(temp) {
 * @returns {string} - A message about their age
 */
 function ageMessage(age) {
- if(age >= 65) {
-   return "You are a senior"
- } else if (age >= 18 && age < 65) {
-   return "You are an adult"
- } else {
-   return "You are a minor"
- }
+  if (age >= 65) {
+    return "You are a senior"
+  } else if (age >= 18 && age < 65) {
+    return "You are an adult"
+  } else {
+    return "You are a minor"
+  }
 }
 
 module.exports = {

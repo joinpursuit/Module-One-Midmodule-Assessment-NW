@@ -17,8 +17,13 @@ function evenNumbers(num) {
 */
 function multiplesToOneThousand(num) {
   let arr = []
-  while (num < 1000) { }
+  for (let i = 0; i < 1000; i * num) {
+    arr.push(i)
+  }
+  return arr
 }
+
+// counldn't figure this out in time
 
 /** Returns the first n powers of 2 (starting at 0)
 * Sample input: 6
@@ -27,8 +32,13 @@ function multiplesToOneThousand(num) {
 * @param {number} count - How many powers of two to find
 * @returns {number[]} - An array with the first {count} powers of two
 */
-function powersOfTwo() {
-
+function powersOfTwo(count) {
+  let arr = []
+  let i = 0
+  for (i; i <= count; i++) {
+    arr.push(Math.pow(i, 2))
+  }
+  return arr
 }
 
 module.exports = {
