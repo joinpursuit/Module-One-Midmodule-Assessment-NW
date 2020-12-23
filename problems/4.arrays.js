@@ -2,8 +2,12 @@
 * @param {number[]} arr - The input array
 * @returns {number} - The average of the first and last values
 */
-function firstAndLastAverage() {
-
+function firstAndLastAverage(arr) {
+  if(arr.length < 2){
+    return null;
+  }else{
+    return (arr[0]+arr[arr.length -1]) / 2;
+  }
 }
 
 /** Duplicates all values inside an array.
@@ -12,16 +16,22 @@ function firstAndLastAverage() {
 * @param {number[]} arr - The input array
 * @returns {number[]} - The duplicated array
 */
-function duplicateArray() {
-
+function duplicateArray(arr) {
+  arr2 = arr.slice();
+  return arr.concat(arr2);
 }
 
 /** Removes the first 3 elements from an array. If the array has fewer than 3 elements, return an empty array.
 * @param {any[]} arr - The input array
 * @returns {any[]} - The array with the first 3 elements removed
 */
-function removeFirstThreeElements() {
-
+function removeFirstThreeElements(arr) {
+  if(arr.length < 3){
+    return arr = [];
+  }else{
+    arr.splice(0, 3);
+    return arr;
+  }
 }
 
 module.exports = {
