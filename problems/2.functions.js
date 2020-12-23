@@ -3,8 +3,8 @@
  * @returns {null}
  */
 function logGreeting() {
-    let name = Avery;
-    console.log(`Hello ${name}`);
+    let name = "Avery!";
+    console.log("Hello " + name );
 }
 
 /** Returns a custom greeting string in the form "Hello Avery!"
