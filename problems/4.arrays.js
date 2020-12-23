@@ -3,6 +3,14 @@
 * @returns {number} - The average of the first and last values
 */
 const firstAndLastAverage = (arr) => {
+  let sum = arr[0] + arr[arr.length-1]
+  let average = sum/2
+  if(arr.length <= 1){
+    return null
+  } else if( arr.length >= 2){
+    return average
+  }
+ 
 }
 
 /** Duplicates all values inside an array.

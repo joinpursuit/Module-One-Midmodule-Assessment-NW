@@ -11,7 +11,11 @@ const isNumber = (val) => {
 * @returns {boolean} - Is val truthy
 */
 const isTruthy = (val) => {
-  return val === true
+  if(val){
+    return true
+  } else {
+    return false
+  }
 }
 
 
