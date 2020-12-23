@@ -2,7 +2,11 @@
 * @param {number[]} arr - The input array
 * @returns {number} - The average of the first and last values
 */
-function firstAndLastAverage() {
+function firstAndLastAverage (arr = [5, 7, 9, 10 ]) {
+   let num1 = arr[0]
+   let num2 = [arr.length-1]   
+  let avg = num1 + num2 / 2
+       return avg;
 
 }
 
@@ -12,15 +16,19 @@ function firstAndLastAverage() {
 * @param {number[]} arr - The input array
 * @returns {number[]} - The duplicated array
 */
-function duplicateArray() {
-
+function duplicateArray(a, b) {
+  let a = [1, 2, 3, 4, 5];
+  let b = [1, 2, 3, 4, 5];
+return (a.concat(b));
 }
 
 /** Removes the first 3 elements from an array. If the array has fewer than 3 elements, return an empty array.
 * @param {any[]} arr - The input array
 * @returns {any[]} - The array with the first 3 elements removed
 */
-function removeFirstThreeElements() {
+function removeFirstThreeElements(arr = [ sugar, coffee, milk, tea]) {
+      arr.splice(0,1,2)
+      return arr;
 
 }
 
