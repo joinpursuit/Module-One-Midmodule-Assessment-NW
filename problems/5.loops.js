@@ -3,8 +3,16 @@
 * @param {number[]} - An array of even numbers from 0 to {num}
 */
 function evenNumbers() {
-
+  let arr = []
+  let num = 0
+  while (num > 0) {
+    if ( num % 2 === 0) {
+      num++
+    }
+  }return arr.push(num)
 }
+
+
 
 /** Returns all multiples of a given number up to 1000
  * Example if num was 3 the output would be [0, 3, 6, 9, 12, ..., 999]
@@ -12,7 +20,10 @@ function evenNumbers() {
 * @returns {number[]} - An array of all multiples of {num} up to 1000
 */
 function multiplesToOneThousand() {
-
+let num = 10
+for(let num = 0; num <=10; num++) {
+  return
+}
 }
 
 /** Returns the first n powers of 2 (starting at 0)
