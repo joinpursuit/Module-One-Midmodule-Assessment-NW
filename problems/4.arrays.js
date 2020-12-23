@@ -28,10 +28,10 @@ function firstAndLastAverage(arr) {
  */
 function duplicateArray(arr1, arr2) {
     let input = []
-    for (let i = 0; i < arr1.lenght; i++) {
+    for (let i = 0; i < arr1.length; i++) {
         input.push(arr1(i))
     }
-    for (let i = 0; i < arr2.lenght; i++) {
+    for (let i = 0; i < arr2.length; i++) {
         input.push(arr2(i))
     }
     return input;
@@ -43,7 +43,7 @@ function duplicateArray(arr1, arr2) {
  */
 function removeFirstThreeElements(arr) {
     let remove = [];
-    for (let i = 0; i < arr.lenght; i++) {
+    for (let i = 0; i < arr.length; i++) {
         constnum = arr[i];
         if (!remove.includes(num));
         remove.includes.shift([0, 1, 2])

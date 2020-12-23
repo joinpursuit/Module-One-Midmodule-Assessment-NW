@@ -7,7 +7,7 @@ function temperatureMessage(temp) {
     if (num === temp) {
         return `It's freezing !`
     } else {
-        return `It 's alright`
+        return `It's alright`
     }
 }
 
@@ -19,8 +19,8 @@ function temperatureMessage(temp) {
  */
 function temperatureMessageUsingTernary() {
     let temp = -Infinity < 32;
-    a = ` It's freezing!`
-    b = ` It's alright`
+    a = `It's freezing!`
+    b = `It's alright`
     if (temp === a) {
         return a;
 
@@ -41,7 +41,7 @@ function ageMessage(age) {
     if (age >= 65) {
         return " You are a senior"
     } else if (age >= 18) {
-        return " You are an adult"
+        return "You are an adult"
     } else {
         return "You are a minor"
 
