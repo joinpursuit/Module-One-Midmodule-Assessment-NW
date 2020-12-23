@@ -21,7 +21,7 @@ function duplicateArray() {
 * @returns {any[]} - The array with the first 3 elements removed
 */
 function removeFirstThreeElements() {
-
+      
 }
 
 module.exports = {
