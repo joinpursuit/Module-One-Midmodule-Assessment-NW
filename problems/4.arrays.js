@@ -22,9 +22,10 @@ function duplicateArray(arr) {
 * @param {any[]} arr - The input array
 * @returns {any[]} - The array with the first 3 elements removed
 */
-function removeFirstThreeElements() {
-
-}
+function removeFirstThreeElements(arr) {
+  arr.splice(0, 3)
+  return arr
+} 
 
 module.exports = {
   firstAndLastAverage,
