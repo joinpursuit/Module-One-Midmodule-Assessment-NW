@@ -12,7 +12,11 @@ console.log(isNumber(4))
 * @returns {boolean} - Is val truthy
 */
 function isTruthy(val) {
-  return val && true;
+  if (val) {
+    return true
+  } else {
+    return false 
+  }
 }
 
 

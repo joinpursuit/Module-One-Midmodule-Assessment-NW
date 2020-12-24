@@ -3,9 +3,12 @@
 * @returns {number} - The average of the first and last values
 */
 function firstAndLastAverage(arr) {
-  return (arr[0] + arr.length -1) / 2
-  
+  if(arr.length < 2) {
+    return null;
+  } 
+  return (arr[0] + arr[arr.length -1]) / 2
 }
+
 console.log(firstAndLastAverage[2,3,4,5,6])
 
 /** Duplicates all values inside an array.
@@ -15,7 +18,7 @@ console.log(firstAndLastAverage[2,3,4,5,6])
 * @returns {number[]} - The duplicated array
 */
 function duplicateArray(arr) {
-  return arr.push(arr + arr) 
+  return arr.concat(arr)
 }
 console.log(duplicateArray([1,4,6,7,8]))
 
@@ -24,7 +27,8 @@ console.log(duplicateArray([1,4,6,7,8]))
 * @returns {any[]} - The array with the first 3 elements removed
 */
 function removeFirstThreeElements (arr) {
-   return arr.splice(0,3)
+   arr.splice(0,3);
+   return arr
 }
 
 console.log(removeFirstThreeElements([1,2,4,5,3]))

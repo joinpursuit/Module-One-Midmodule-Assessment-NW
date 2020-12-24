@@ -23,11 +23,9 @@ console.log(greeting("Corey "))
 * @modifies {global.globalCount}
 */
 function incrementGlobalCount(val) {
-global.GlobalCount = 0
-return val + global.GlobalCount
-}
+   global.globalCount += val;
 
-console.log(incrementGlobalCount())
+}
 
 /** Multiplies three numbers
 * @param {number} firstNum - The first number

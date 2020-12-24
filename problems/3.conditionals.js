@@ -16,7 +16,7 @@ console.log(temperatureMessage(40))
 * @returns {string} - A message about the temperature
 */
 function temperatureMessageUsingTernary(temp) {
-  return (temp < "32" ? "It's freezing!" : "It's alright") 
+  return temp < "32" ? "It's freezing!" : "It's alright"
     
   }
 
