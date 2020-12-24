@@ -9,7 +9,14 @@ function evenNumbers() {}
 * @param {number} num - The number to find multiples of
 * @returns {number[]} - An array of all multiples of {num} up to 1000
 */
-function multiplesToOneThousand(num) {}
+
+function multiplesToOneThousand(num) {
+  let multiplesArr = [];
+  for (let i = 0; num * i <= 1000; i++) { 
+    multiplesArr.push(num * i);
+  }
+  return multiplesArr;
+ }
 
 /** Returns the first n powers of 2 (starting at 0)
 * Sample input: 6
