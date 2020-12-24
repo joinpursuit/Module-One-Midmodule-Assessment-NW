@@ -13,7 +13,9 @@ function isNumber(val) {
 function isTruthy(val) {
   if(val) {
     return true 
-  } else return false
+  } else {
+    return false
+  }
 }
 
 module.exports = {
