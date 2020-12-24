@@ -2,7 +2,12 @@
 * @param {number} num - The number to iterate up to
 * @param {number[]} - An array of even numbers from 0 to {num}
 */
-function evenNumbers() {}
+function evenNumbers(num) {
+  const evenArr = []
+  for(i = 0; i <= num; i += 2) {
+    evenArr.push(i)
+  } return evenArr
+}
 
 /** Returns all multiples of a given number up to 1000
  * Example if num was 3 the output would be [0, 3, 6, 9, 12, ..., 999]
@@ -11,7 +16,7 @@ function evenNumbers() {}
 */
 
 function multiplesToOneThousand(num) {
-  let multiplesArr = [];
+  const multiplesArr = [];
   for (let i = 0; num * i <= 1000; i++) { 
     multiplesArr.push(num * i);
   }
