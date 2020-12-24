@@ -2,36 +2,14 @@
 * @param {number} num - The number to iterate up to
 * @param {number[]} - An array of even numbers from 0 to {num}
 */
-function evenNumbers(num) {
-  const oddArr = []
-  const evenArr = []
-
-  for(let i = 0; i <= num; i++) {
-    if(num % 2 === 0) {
-      evenArr.push(num[i])
-    } else {
-    oddArr.push(num[i])
-    }
-  } return evenNumbers
-} 
-
-// console.log(evenNumbers(1,2,3,4,5,6,7))
+function evenNumbers() {}
 
 /** Returns all multiples of a given number up to 1000
  * Example if num was 3 the output would be [0, 3, 6, 9, 12, ..., 999]
 * @param {number} num - The number to find multiples of
 * @returns {number[]} - An array of all multiples of {num} up to 1000
 */
-function multiplesToOneThousand(num) { // I not clear on whether just one number is being passed through
-  // take a number 
-  // multiple by increasing number
-  
-  let multiplesArr = []
-    for(let i = 0; num * i <= 1000; i++) {
-      multiplesArr.push(num * i) 
-    
-  } return multiplesArr
-} 
+function multiplesToOneThousand(num) {}
 
 /** Returns the first n powers of 2 (starting at 0)
 * Sample input: 6
@@ -40,7 +18,7 @@ function multiplesToOneThousand(num) { // I not clear on whether just one number
 * @param {number} count - How many powers of two to find
 * @returns {number[]} - An array with the first {count} powers of two
 */
-function powersOfTwo(count) { // have no idea what this question is asking
+function powersOfTwo() {
 
 }
 
