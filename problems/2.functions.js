@@ -2,17 +2,24 @@
 * @param {string} name - The name of the user to greet
 * @returns {null}
 */
-function logGreeting() {
-  let name = "Hello Avery!"
+function logGreeting(name) {
+  console.log("Hello " + name + "!")
 }
+// 
+// Don't second guess yourself always go with your first answer!! 
+// Then ask for help to understand why your original answer didn't work. It could've been an syntax error
 /** Returns a custom greeting string in the form "Hello Avery!"
 * @param {string} name - The name of the user to greet
 * @returns {string} - The custom greeting
 */
-function greeting() {
-  let name = "Hello Avery!"
-  return name
+// function greeting() {
+const greeting = name => {
+  return `Hello ${name}!`
 }
+// console.log(greeting("auredy")) to run my own file in node
+// string interpolation^^
+// return "Hello " + name + "!" 
+// string concatenation ^^
 
 /** Adds a number to a global variable called globalCount
  * Access globalCount like this: global.globalCount
@@ -20,10 +27,12 @@ function greeting() {
 * @returns {null}
 * @modifies {global.globalCount}
 */
-function incrementGlobalCount() {
-  let val = global.globalCount
-  return val
+// function incrementGlobalCount() {
+const incrementGlobalCount = val => {
+  global.globalCount += val;
+  // global.globalCount = global.globalCount + val^^
 }
+// global can be accessed anywhere in node/javascript
 /** Multiplies three numbers
 * @param {number} firstNum - The first number
 * @param {number} secondNum - The second number
