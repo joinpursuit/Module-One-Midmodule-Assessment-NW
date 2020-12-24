@@ -21,18 +21,8 @@ function isNumber(a, b) {
  * @param {any} val - The input value
  * @returns {boolean} - Is val truthy
  */
-function isTruthy() {
-   let i = 0;
-   while (i <= 0) {
-       if (i === isTruthy) {
-           return isTruthy;
-        }else {
-            return false;
-
-        }
-
-    }
-
+function isTruthy(val) {
+  return  !!val
 }
 
 

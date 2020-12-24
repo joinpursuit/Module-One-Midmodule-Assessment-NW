@@ -3,13 +3,14 @@
  * @returns {string} - A message about the temperature
  */
 function temperatureMessage(temp) {
-    let num = -Infinity < 32
-    if (num === temp) {
-        return `It's freezing !`
-    } else {
-        return `It's alright`
+   if( temp <32) {
+       return `It's freezing!`;
+    }else {
+        return `It's alright`;
     }
-}
+
+   }
+
 
 
 
@@ -17,20 +18,13 @@ function temperatureMessage(temp) {
  * @param {number} temp - The current temperatur
  * @returns {string} - A message about the temperature
  */
-function temperatureMessageUsingTernary() {
-    let temp = -Infinity < 32;
-    a = `It's freezing!`
-    b = `It's alright`
-    if (temp === a) {
-        return b;
-
-    } else {
-        return a;
-
-    }
-
-
+function temperatureMessageUsingTernary(temp) {
+   return temp < 32 ? `It's freezing!` : `It's alright`;
 }
+
+
+
+
 
 
 /** Returns "You are a senior" if the age is 65 or older, "You are an adult" if the age is 18 or older, and "You are a minor" otherwise.
