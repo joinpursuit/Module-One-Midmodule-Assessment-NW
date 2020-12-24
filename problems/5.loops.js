@@ -30,16 +30,9 @@ function multiplesToOneThousand(num) {
 * @param {number} count - How many powers of two to find
 * @returns {number[]} - An array with the first {count} powers of two
 */
-// returns array that takes a given number of elements each to the power of 2
-// [i] **2 and appears ${count} times
-function powersOfTwo(count) {
-  const powerOfTwoArr = []
-  for(i = 0; i < count; i++) {
-    powerOfTwoArr.push(2 ** i) // had the equation wrong i **2
-  } 
-  return powerOfTwoArr
-}
+function powersOfTwo() {
 
+}
 
 module.exports = {
   evenNumbers,
