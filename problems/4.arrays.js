@@ -2,8 +2,13 @@
 * @param {number[]} arr - The input array
 * @returns {number} - The average of the first and last values
 */
-function firstAndLastAverage() {
-
+function firstAndLastAverage(arr) {
+let avg = (arr[0] + arr[arr.length - 1])/2
+  if(arr.length >=2) {
+  return avg
+} else {
+  return null
+}
 }
 
 /** Duplicates all values inside an array.
@@ -12,7 +17,14 @@ function firstAndLastAverage() {
 * @param {number[]} arr - The input array
 * @returns {number[]} - The duplicated array
 */
-function duplicateArray() {
+function duplicateArray(arr) {
+  
+  let arr1 = []
+  for(i = 0; i < arr.length; i++) {
+    arr1.push(arr[i])
+ 
+  }
+  return arr1.concat(arr)
 
 }
 
@@ -20,9 +32,12 @@ function duplicateArray() {
 * @param {any[]} arr - The input array
 * @returns {any[]} - The array with the first 3 elements removed
 */
-function removeFirstThreeElements() {
+function removeFirstThreeElements(arr) {
 
-}
+   arr.splice(0, 3)
+ return arr
+} 
+
 
 module.exports = {
   firstAndLastAverage,
