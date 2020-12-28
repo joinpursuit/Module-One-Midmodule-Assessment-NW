@@ -11,7 +11,7 @@ console.log("Hello " + name + "!")
 * @returns {string} - The custom greeting
 */
 function greeting(name) {
-return "Hello" + name + "!"
+return "Hello " + name + "!"
 }
 
 

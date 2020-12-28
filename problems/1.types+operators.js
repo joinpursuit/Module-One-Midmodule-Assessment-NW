@@ -15,13 +15,13 @@ function isNumber(val) {
 * @returns {boolean} - Is val truthy
 */
 function isTruthy(val) {
-  if(val === true) {
+  if(val) {
     return true
   } else {
     return false
   }
   }
-
+// return !!val
 
 
 module.exports = {

@@ -4,7 +4,7 @@
 */
 function firstAndLastAverage(arr) {
 let avg = (arr[0] + arr[arr.length - 1])/2
-  if(arr.length > 2) {
+  if(arr.length >=2) {
   return avg
 } else {
   return null
@@ -19,8 +19,8 @@ let avg = (arr[0] + arr[arr.length - 1])/2
 */
 function duplicateArray(arr) {
   
+  let arr1 = []
   for(i = 0; i < arr.length; i++) {
-    let arr1 = []
     arr1.push(arr[i])
  
   }
@@ -34,11 +34,10 @@ function duplicateArray(arr) {
 */
 function removeFirstThreeElements(arr) {
 
-  let spliced = arr.splice(1, 3)
-  if(arr.length > 3) {
-    return spliced
+   arr.splice(0, 3)
+ return arr
 } 
-}
+
 
 module.exports = {
   firstAndLastAverage,
