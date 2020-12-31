@@ -1,9 +1,13 @@
-/** Averages the first and last value of an array.  Return null if the array has fewer than 2 elements.
+/** Averages the first and last value of an array.  
+ * Return null if the array has fewer than 2 elements.
 * @param {number[]} arr - The input array
 * @returns {number} - The average of the first and last values
 */
-function firstAndLastAverage() {
-
+const firstAndLastAverage = (arr) => {
+  if(arr.length < 2) {
+    return null;
+} 
+return ((arr[0] + arr[arr.length - 1]) / 2);
 }
 
 /** Duplicates all values inside an array.
@@ -12,16 +16,32 @@ function firstAndLastAverage() {
 * @param {number[]} arr - The input array
 * @returns {number[]} - The duplicated array
 */
-function duplicateArray() {
-
+const duplicateArray = (arr) => {
+ let newArray = arr.concat(arr);
+ return newArray;
 }
 
-/** Removes the first 3 elements from an array. If the array has fewer than 3 elements, return an empty array.
+/** Removes the first 3 elements from an array. 
+ * If the array has fewer than 3 elements, 
+ * return an empty array.
 * @param {any[]} arr - The input array
 * @returns {any[]} - The array with the first 3 elements removed
 */
-function removeFirstThreeElements() {
-
+const removeFirstThreeElements = (arr) => {
+  arr.splice(0, 3);
+  return arr;
+//   let i = 0;
+//   while (i < arr.length - 1) {
+//     if (i < arr.length - 1) {
+//       arr.shift();
+//       arr.shift();
+//       arr.shift();
+//     } 
+//     else if (arr.length < 3) {
+//       arr.splice(0, 3);
+//     } 
+// return arr
+//   }
 }
 
 module.exports = {
