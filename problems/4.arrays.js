@@ -4,7 +4,10 @@
 * @returns {number} - The average of the first and last values
 */
 const firstAndLastAverage = (arr) => {
-  return arr.shift() + arr.pop(); 
+  if(arr.length < 2) {
+    return null;
+} 
+return ((arr[0] + arr[arr.length - 1]) / 2);
 }
 
 /** Duplicates all values inside an array.
@@ -14,8 +17,7 @@ const firstAndLastAverage = (arr) => {
 * @returns {number[]} - The duplicated array
 */
 const duplicateArray = (arr) => {
- let newArray = [];
- newArray.push(arr, arr);
+ let newArray = arr.concat(arr);
  return newArray;
 }
 
@@ -26,18 +28,20 @@ const duplicateArray = (arr) => {
 * @returns {any[]} - The array with the first 3 elements removed
 */
 const removeFirstThreeElements = (arr) => {
-  let i = 0;
-  while (i > arr.length - 1) {
-    if (i > arr.length - 1) {
-      arr.pop();
-      arr.pop();
-      arr.pop();
-    } 
-    else if (i < arr.length -1) {
-      return null
-    } 
-return arr
-  }
+  arr.splice(0, 3);
+  return arr;
+//   let i = 0;
+//   while (i < arr.length - 1) {
+//     if (i < arr.length - 1) {
+//       arr.shift();
+//       arr.shift();
+//       arr.shift();
+//     } 
+//     else if (arr.length < 3) {
+//       arr.splice(0, 3);
+//     } 
+// return arr
+//   }
 }
 
 module.exports = {

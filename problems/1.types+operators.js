@@ -11,9 +11,16 @@ const isNumber = (val) => {
 * @returns {boolean} - Is val truthy
 */
 const isTruthy = (val) => {
-  return typeof val !== false
+  if(val) {
+    return true;
+} else {
+  return false;
+}
 }
 
+console.log(isTruthy([]));
+console.log(isTruthy(7));
+console.log(isTruthy("fox"));
 
 module.exports = {
   isNumber,

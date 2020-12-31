@@ -3,9 +3,8 @@
 * @returns {null}
 */
 const logGreeting = (name) => {
-  return `Hello ${name}!`;
+  console.log("Hello " + name + "!");
 }
-console.log(logGreeting);
 
 /** Returns a custom greeting string in the form "Hello Avery!"
 * @param {string} name - The name of the user to greet
@@ -22,7 +21,7 @@ const greeting = (name) => {
 * @modifies {global.globalCount}
 */
 const incrementGlobalCount = (val) => {
-  global.globalCount + val;
+  global.globalCount += val;
 }
 
 /** Multiplies three numbers
