@@ -6,9 +6,7 @@
 const evenNumbers = (num) => {
   let evenArray = [];
   for (let i = 0; i <= num; i += 2) {
-    if (i % 2 === 0) {
       evenArray.push(i);
-    }
   }
   return evenArray;
 };
@@ -31,7 +29,7 @@ const multiplesToOneThousand = (num) => {
 // const multiplesToOneThousand = (num) => {
 //   let sum = 0;
 //   let multiplesArr = [0];
-//   loop = Math.floor(1000 / num);
+//   let loop = Math.floor(1000 / num);
 //   for (let i = 0; i < loop; i++) {
 //     sum += num;
 //     if ((sum < 1000)) {
