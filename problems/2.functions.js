@@ -3,7 +3,7 @@
 * @returns {null}
 */
 function logGreeting(name) {
-  console.log("Hello " + name + "!")
+  console.log(`Hello ${name}!`)
 }
 
 /** Returns a custom greeting string in the form "Hello Avery!"
@@ -11,7 +11,7 @@ function logGreeting(name) {
 * @returns {string} - The custom greeting
 */
 function greeting(name) {
-  return ("Hello " + name + "!");
+  return `Hello ${name}!`
 }
 
 /** Adds a number to a global variable called globalCount
@@ -22,6 +22,7 @@ function greeting(name) {
 */
 
 function incrementGlobalCount(val) {
+  global.globalCount += val;
 }
 /** Multiplies three numbers
 * @param {number} firstNum - The first number

@@ -20,10 +20,10 @@ function firstAndLastAverage(arr) {
 * @returns {number[]} - The duplicated array
 */
 function duplicateArray(arr) {
-  let arr1 = arr
-  let arr2 = arr1.concat(arr)
-  return arr2
+  return arr.concat(arr)
 }
+
+
 /** Removes the first 3 elements from an array. If the array has fewer than 3 elements, return an empty array.
 * @param {any[]} arr - The input array
 * @returns {any[]} - The array with the first 3 elements removed
@@ -37,10 +37,6 @@ function removeFirstThreeElements(arr) {
   return arr    
 }
 
-// function removeFirstThreeElements(arr) {
-//   let arr2 = arr.splice(0, 3);
-//   return arr;
-// }
 module.exports = {
   firstAndLastAverage,
   duplicateArray,

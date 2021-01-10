@@ -14,7 +14,7 @@ function temperatureMessage(temp) {
 * @param {number} temp - The current temperatur
 * @returns {string} - A message about the temperature
 */
-const temperatureMessageUsingTernary = temp => { return temp >= 32 ? "It's alright" : "It's freezing!"}
+const temperatureMessageUsingTernary = temp => temp >= 32 ? "It's alright" : "It's freezing!"
 
 
 /** Returns "You are a senior" if the age is 65 or older, "You are an adult" if the age is 18 or older, and "You are a minor" otherwise.
@@ -22,7 +22,7 @@ const temperatureMessageUsingTernary = temp => { return temp >= 32 ? "It's alrig
 * @returns {string} - A message about their age
 */
 function ageMessage(age) {
-  if(age >= 65 && age ){
+  if(age >= 65){
     return ("You are a senior")
   }else if (age >= 18){
     return ("You are an adult")
