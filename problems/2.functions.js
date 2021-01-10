@@ -1,10 +1,10 @@
 /** Logs a custom greeting to the console in the form "Hello Avery!"
 * @param {string} name - The name of the user to greet
-* @returns {null}
+* @returns {null} <---error?
 */
 //function logGreeting() {}
 const logGreeting = (name) => {
-  console.log("Hello " + name + "!");
+  console.log(`Hello ${name}!`); 
 }
 
 /** Returns a custom greeting string in the form "Hello Avery!"
@@ -13,13 +13,13 @@ const logGreeting = (name) => {
 */
 //function greeting() {}
 const greeting = (name) => {
-return ("Hello " + name + "!");
+return `Hello ${name}!`;  
 }
 
 /** Adds a number to a global variable called globalCount
  * Access globalCount like this: global.globalCount
 * @param  {number} val - The number to add to globalCount
-* @returns {null}
+* @returns {undefined}
 * @modifies {global.globalCount}
 */
 //function incrementGlobalCount() {}
@@ -35,7 +35,7 @@ global.globalCount += val;
 */
 //function multiply() {}
 const multiply = (firstNum, secondNum, thirdNum) => {
-  return (firstNum * secondNum * thirdNum);
+  return firstNum * secondNum * thirdNum;
 }
 
 

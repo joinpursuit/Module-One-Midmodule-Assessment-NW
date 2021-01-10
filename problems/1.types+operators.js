@@ -4,7 +4,7 @@
 */
 //function isNumber() {}
 const isNumber = (val) => {
-  return (typeof val === "number") ? true : false;
+  return typeof val === "number";
 }
 
 /** Takes in a value and returns whether it is truthy
@@ -13,7 +13,7 @@ const isNumber = (val) => {
 */
 //function isTruthy() {}
 const isTruthy =(val) => {
-  return val ? true : false;
+  return val ? true : false; //or return !!val
 }
 
 module.exports = {

@@ -1,11 +1,11 @@
 /** Returns every even number from 0 to a given number
  * @param {number} num - The number to iterate up to
- * @param {number[]} - An array of even numbers from 0 to {num}
+ * @returns {number[]} - An array of even numbers from 0 to {num}
  */
 //function evenNumbers() {}
 const evenNumbers = (num) => {
   let evenArray = [];
-  for (i = 0; i <= num; i += 2) {
+  for (let i = 0; i <= num; i += 2) {
     if (i % 2 === 0) {
       evenArray.push(i);
     }
@@ -20,17 +20,26 @@ const evenNumbers = (num) => {
  */
 //function multiplesToOneThousand() {}
 const multiplesToOneThousand = (num) => {
-  let sum = 0;
-  let multiplesArr = [0];
-  loop = Math.floor(999 / num);
-  for (i = 0; i < loop; i++) {
-    sum += num;
-    if ((sum < 999)) {
-      multiplesArr.push((sum));
-    }
+  let output = [];
+  for (let i = 0; i < 1000; i += num) {
+    output.push(i);
   }
-  return multiplesArr;
+  return output;
 };
+
+//WORKS BUT COMPLICATED
+// const multiplesToOneThousand = (num) => {
+//   let sum = 0;
+//   let multiplesArr = [0];
+//   loop = Math.floor(1000 / num);
+//   for (let i = 0; i < loop; i++) {
+//     sum += num;
+//     if ((sum < 1000)) {
+//       multiplesArr.push((sum));
+//     }
+//   }
+//   return multiplesArr;
+// };
 
 /** Returns the first n powers of 2 (starting at 0)
  * Sample input: 6
@@ -42,11 +51,22 @@ const multiplesToOneThousand = (num) => {
 //function powersOfTwo() {}
 const powersOfTwo = (count) => {
   let expArr = [];
-  for (i = 0; i < count; i++) {
+  for (let i = 0; i < count; i++) {
     expArr.push(2 ** i);
   }
   return expArr;
 };
+
+//or using Math.pow()
+// const powersOfTwo = (count) => {
+//   let output = [];
+//   let power = 0;
+//   while (count > output.length) { //or (power < count)
+//     output.push(Math.pow(2, power)); // or output.push(2 ** power)
+//     power += 1;
+//   }
+//   return output;
+// };
 
 module.exports = {
   evenNumbers,
