@@ -44,10 +44,9 @@ function multiplesToOneThousand(num) {
  * @returns {number[]} - An array with the first {count} powers of two
  */
 function powersOfTwo(count) {
-  let arr = [];
-  let power = 0;
-  for (let i = 0; arr.length < count; power +=1) {
-    arr.push(Math.pow(2,power))
+  let arr = []
+  for (let i = 0; i < count; i++) {
+    arr.push(Math.pow(2,i))
   }
   return arr;
 }
