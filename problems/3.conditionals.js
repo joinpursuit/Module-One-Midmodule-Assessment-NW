@@ -3,12 +3,10 @@
 * @returns {string} - A message about the temperature
 */
 const  temperatureMessage = (temp) => {
-  if (temperature < 32){
-    return " It's freezing!"
-  }else if (temperature > 32){
-    return "It's alright!"
-  }else {
-    return "It's warm"
+  if(temp < 32){
+    return "It's freezing!"
+  }else{
+    return "It's alright"
   }
 }
 
@@ -18,7 +16,7 @@ const  temperatureMessage = (temp) => {
 * @returns {string} - A message about the temperature
 */
 const  temperatureMessageUsingTernary = (temp) => {
-  return (temperature < 32)? "Its freezing!" : "Its alright!"
+  return (temp < 32)? "It's freezing!" : "It's alright"
 
 }
 
@@ -28,9 +26,9 @@ const  temperatureMessageUsingTernary = (temp) => {
 * @returns {string} - A message about their age
 */
 const ageMessage = (age) => {
-  if (age > 65){
+  if (age >= 65){
     return "You are a senior"
-  }else if (age > 18) {
+  }else if (age >= 18) {
     return "You are an adult"
   }else {
     return "You are a minor"

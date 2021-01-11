@@ -2,10 +2,13 @@
 * @param {any} val - The input value
 * @returns {boolean} - Is val a number
 */
-function isNumber(val) {
-  let value = number 
-  return (value === number )? true : false
-    
+  const isNumber = val => {
+    let number = 0
+    if(typeof val === "number"){
+      return true  
+    }else{
+      return false
+    }
 }
 
 /** Takes in a value and returns whether it is truthy
@@ -13,7 +16,11 @@ function isNumber(val) {
 * @returns {boolean} - Is val truthy
 */
   function isTruthy(val){
-    return (4 === 4) || (2 === 2)? true : false
+    if (val) {
+      return true
+      }else {
+        return false
+      }
 
 }
 

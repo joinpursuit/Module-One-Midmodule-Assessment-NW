@@ -3,7 +3,7 @@
 * @returns {null}
 */
 function logGreeting(name) {
-  console.log("Hello" + name + "!")
+  console.log ("Hello " + name + "!") 
 
 }
 
@@ -12,7 +12,7 @@ function logGreeting(name) {
 * @returns {string} - The custom greeting
 */
 function greeting(name) {
- return "Hello" + " " + "name" + "!"
+ return "Hello " + name + "!" 
 }
 
 /** Adds a number to a global variable called globalCount
@@ -22,7 +22,7 @@ function greeting(name) {
 * @modifies {global.globalCount}
 */
 function incrementGlobalCount(val) {
-  
+  global.globalCount = global.globalCount + val
 }
 
 /** Multiplies three numbers
@@ -32,13 +32,9 @@ function incrementGlobalCount(val) {
 * @returns {number} - The product of the three numbers
 */
 function multiply(firstNum, secondNum , thirdNum) {
-  let num1 = 1
-  let num2 = 2
-  let num3 = 3
-  let threeNumbersMultiplied = (num1 * num2 *  num3)
-  return threeNumbersMultiplied 
-
+return firstNum * secondNum * thirdNum
 }
+
 
 module.exports = {
   logGreeting,

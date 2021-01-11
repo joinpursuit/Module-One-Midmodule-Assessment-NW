@@ -2,7 +2,12 @@
 * @param {number[]} arr - The input array
 * @returns {number} - The average of the first and last values
 */
-const firstAndLastAverage = (arr) => {}
+const firstAndLastAverage = (arr) => {
+  if (arr.length < 2) {
+    return null;
+  }
+  return (arr[0] + arr[arr.length - 1]) / 2 
+}
 
 /** Duplicates all values inside an array.
 * Sample input: [1,4,2,5]
@@ -11,13 +16,8 @@ const firstAndLastAverage = (arr) => {}
 * @returns {number[]} - The duplicated array
 */
 const duplicateArray = (arr) => {
-  a = [];
-  b = [];
-  for (i =0; i < a.length; i++){
-    b.push(a[i]);
-    b.push(a[i]);
-  }
-   return a=b
+  return arr.concat(arr);
+
 }
 
 /** Removes the first 3 elements from an array. If the array has fewer than 3 elements, return an empty array.
@@ -25,11 +25,8 @@ const duplicateArray = (arr) => {
 * @returns {any[]} - The array with the first 3 elements removed
 */
 const removeFirstThreeElements = (arr) => {
-  let indexToRemove = [0,1,2]
-  let numberToRemove = [1,4,3]
-  return arr.splice(indexToRemove, numberToRemove)
-  
-
+  arr.splice(0, 3);
+  return arr; 
 }
 
 module.exports = {

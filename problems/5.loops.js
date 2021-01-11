@@ -3,13 +3,11 @@
 * @param {number[]} - An array of even numbers from 0 to {num}
 */
 const evenNumbers = (num) => {
-  let newArray = 0
-  for (let i = 0; i <= number; i++)
-  if (num[i] % 2 === 0){
-    newArray.push(nums[i])
-
+  let newArray = []
+  for(let i = 0; i <= num;i+=2){
+    newArray.push(i)
   }
- return newArray
+  return newArray
 }
 
 /** Returns all multiples of a given number up to 1000
@@ -19,10 +17,8 @@ const evenNumbers = (num) => {
 */
 const  multiplesToOneThousand = (num) => {
   let newArray = []
-  let i = 5
-  while (i <= 1000){
-    newArray.push[i]
-    i+=10
+  for(i = 0; i < 1000; i+=num){
+  newArray.push(i)
   }
   return newArray
 }
@@ -35,8 +31,13 @@ const  multiplesToOneThousand = (num) => {
 * @returns {number[]} - An array with the first {count} powers of two
 */
  const powersOfTwo = (count) => {
-   return Math.pow[6]
-
+   let output = []
+   let power = 0
+   while (output.length < count) {
+     output.push(Math.pow(2, power))
+     power +=1
+   }
+    return output
 }
 
 module.exports = {
