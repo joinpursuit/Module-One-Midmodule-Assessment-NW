@@ -3,13 +3,12 @@
 * @returns {boolean} - Is val a number
 */
 function isNumber(val) {
-  if (val === val) {
-    return true
-} else if (val === typeof Number) {
-  return true
-} else {
-  return false 
-}
+  if (typeof val === "number") {
+    return true 
+  } else {
+    return false 
+  }
+
 }
 
 
@@ -19,17 +18,12 @@ function isNumber(val) {
 * @returns {boolean} - Is val truthy
 */
 function isTruthy(val) {
-if (val === val) {
-  return true
-}else if (val || val){
-  return true
-} else {
-  return false 
+  if (val) {
+    return true
+  } else {
+    return false
+  }
 }
-}
-
-
-
 module.exports = {
   isNumber,
   isTruthy

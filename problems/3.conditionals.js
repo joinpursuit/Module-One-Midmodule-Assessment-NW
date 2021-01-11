@@ -3,12 +3,10 @@
 * @returns {string} - A message about the temperature
 */
 function temperatureMessage(temp) {
-  let temp = 32
-  let i = 0 
-  if (i <= temp) {
-    console.log("It's freezing!")
+  if (temp < 32) {
+    return("It's freezing!")
   } else {
-    console.log ("It's alright")
+    return ("It's alright")
   }
 
 }
@@ -18,9 +16,7 @@ function temperatureMessage(temp) {
 * @returns {string} - A message about the temperature
 */
 function temperatureMessageUsingTernary(temp) {
-let temp = 32 
-let i = num > 32
-return i <= temp ? "It's freezing!" : "It's alright"
+return temp < 32 ? "It's freezing!" : "It's alright"
 }
 
 
@@ -30,7 +26,7 @@ return i <= temp ? "It's freezing!" : "It's alright"
 */
 function ageMessage(age) {
 if (age >= 65) {
-  return "You are a senior "
+  return "You are a senior"
 } else if (age >= 18){
   return "You are an adult"
 } else {

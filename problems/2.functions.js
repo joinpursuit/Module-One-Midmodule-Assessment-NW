@@ -3,10 +3,8 @@
 * @returns {null}
 */
 function logGreeting(name) {
-  console.log("Hello Avery!")
-
+  console.log ("Hello" + " " + name + "!")
 }
-console.log(logGreeting(name))
 
 /** Returns a custom greeting string in the form "Hello Avery!"
 * @param {string} name - The name of the user to greet
@@ -24,7 +22,9 @@ return greeting + " " +name+ "!"
 * @modifies {global.globalCount}
 */
 function incrementGlobalCount(val) {
-  
+ globalThis.globalCount += val 
+
+
 
 }
 /** Multiplies three numbers
