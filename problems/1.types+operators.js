@@ -10,7 +10,9 @@
       return false
     }
 }
-
+  // const isNumber = val => {
+  // return (typeof val === "number"){
+  // } This code is the same as the code above , it is the same because its only two conditions its checking for if its not true then its false.
 /** Takes in a value and returns whether it is truthy
 * @param {any} val - The input value
 * @returns {boolean} - Is val truthy
