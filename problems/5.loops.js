@@ -7,14 +7,17 @@
 // go over and finish the loops lab to understand loops!!
 function evenNumbers(num) {
   let output = [];
-  for (let i = 0; i <= num; num++) {
+  
+  for (let i = 0; i <= num; i++) {
     if (i % 2 === 0) {
-      output.push(num);
+      output.push(i)
+      
     }
-    return output;
+    
   }
+  return output;
 }
-console.log(evenNumbers());
+console.log(evenNumbers([9]));
 // let output = [];
 // let num = 0
 // while (i <= num) {

@@ -25,7 +25,7 @@ function duplicateArray(arr){
   for (let i = 0; i<arr.length; i++) { 
     output.push(arr[i]);
   }
-  return arr
+  return output
 } 
 // better way to write the problem return arr.concat(arr); = easiest way to ans
 // return [..arr' ..arr]; = diferrent output
