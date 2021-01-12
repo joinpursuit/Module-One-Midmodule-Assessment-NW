@@ -3,17 +3,23 @@
 * @returns {boolean} - Is val a number
 */
 function isNumber(val) {
-  if(5 === 5)
-  return true
-} 
+  if(typeof(val) === "number") {
+    return true
+  } else {
+    return false
+  }
+}
 
 /** Takes in a value and returns whether it is truthy
 * @param {any} val - The input value
 * @returns {boolean} - Is val truthy
 */
-function isTruthy(val1) {
-  val1 = false || true;
-  return true;
+function isTruthy(val) {
+  if(val) {
+    return true
+  } else {
+    return false
+  }
 }
 
 

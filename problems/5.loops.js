@@ -1,6 +1,6 @@
 /** Returns every even number from 0 to a given number
 * @param {number} num - The number to iterate up to
-* @param {number[]} - An array of even numbers from 0 to {num}
+* @returns {number[]} - An array of even numbers from 0 to {num}
 */
 // function evenNumbers() {}
 const evenNumbers = num => {
@@ -40,9 +40,7 @@ const multiplesToOneThousand = num => {
 * @param {number} count - How many powers of two to find
 * @returns {number[]} - An array with the first {count} powers of two
 */
-function powersOfTwo() {
-
-}
+function powersOfTwo() {}
 
 module.exports = {
   evenNumbers,
