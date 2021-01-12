@@ -4,7 +4,7 @@
  */
 function evenNumbers(num) {
   let newArray = [];
-  for (i = 0; i <= num; i++) {
+  for (let i = 0; i <= num; i++) {
     if (i % 2 === 0) {
       newArray.push(i);
     }
@@ -18,13 +18,11 @@ function evenNumbers(num) {
  * @returns {number[]} - An array of all multiples of {num} up to 1000
  */
 function multiplesToOneThousand(num) {
-  let newMultiple = 0;
-  let newArray = [];
-  for (i = 0; i <= 1000; i++) {
-    newMultiple = num * i;
-    newArray.push(newMultiple);
+  let output = [];
+  for (let i = 0; i < 1000; i += num) {
+    output.push(i);
   }
-  return newArray;
+  return output;
 }
 
 /** Returns the first n powers of 2 (starting at 0)
@@ -35,14 +33,14 @@ function multiplesToOneThousand(num) {
  * @returns {number[]} - An array with the first {count} powers of two
  */
 function powersOfTwo(count) {
-  newArray = [];
-  let newPower = 0;
-  for (i = 0; i <= count; i++) {
-    newArray.push (2 ** i);
-    
+  let newArray = [];
+
+  for (let i = 0; i < count; i++) {
+    newArray.push(2 ** i);
   }
   return newArray;
 }
+console.log(powersOfTwo(6));
 
 module.exports = {
   evenNumbers,

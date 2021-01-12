@@ -21,7 +21,7 @@ function greeting(name) {
  * @modifies {global.globalCount}
  */
 function incrementGlobalCount(val) {
-  console.log(global.globalCount+val);
+  console.log(global.globalCount+=val);
 
 }
 /** Multiplies three numbers
