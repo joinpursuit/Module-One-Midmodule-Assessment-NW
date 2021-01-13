@@ -16,7 +16,7 @@ function logGreeting(name) {
 * @param {string} name - The name of the user to greet
 * @returns {string} - The custom greeting
 */
-  function greeting(name = "Avery") {
+  function greeting(name) {
     return "Hello " + name + "!";
   }
 

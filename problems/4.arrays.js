@@ -12,9 +12,8 @@ function firstAndLastAverage(arr) {
 * @param {number[]} arr - The input array
 * @returns {number[]} - The duplicated array
 */
-function duplicateArray(array1) {
-  let array2 = array1
-  return array1.concat(array2)
+function duplicateArray(arr) {
+  return arr.concat(arr)
 }
 
 /** Removes the first 3 elements from an array. If the array has fewer than 3 elements, return an empty array.

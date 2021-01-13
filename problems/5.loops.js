@@ -4,15 +4,15 @@
 */
 // function evenNumbers() {}
 const evenNumbers = num => {
-  let evenNumArray = []
-  let i = 22
-  while (i > 0) {
-    if(i % 2 === 0) {
-     evenNumArray.push(i)
-    }
-      i++
+  let evenNumArray = [];
+  for(let i = 0; i <= num.length; i++) {
+    if(num[i] % 2 === 0){
+      evenNumArray.push(num[i])
+    } else if(num[i] % 2 !== 0){
+      evenNumArray.push(Math.round(num[i]))
   }
-    return evenNumArray
+  return evenNumArray 
+  }
 }
 
 /** Returns all multiples of a given number up to 1000
@@ -20,18 +20,7 @@ const evenNumbers = num => {
 * @param {number} num - The number to find multiples of
 * @returns {number[]} - An array of all multiples of {num} up to 1000
 */
-// function multiplesToOneThousand() {
-const multiplesToOneThousand = num => {
-  let multipleArray = []
-  let i = 0
-  while (i <= 1000) {
-    if(i % 5 === 0) {
-      multipleArray.push(i)
-    }
-      i++
-  }
-    return multipleArray
-}
+function multiplesToOneThousand() {}
 
 /** Returns the first n powers of 2 (starting at 0)
 * Sample input: 6
@@ -41,6 +30,7 @@ const multiplesToOneThousand = num => {
 * @returns {number[]} - An array with the first {count} powers of two
 */
 function powersOfTwo() {}
+
 
 module.exports = {
   evenNumbers,
