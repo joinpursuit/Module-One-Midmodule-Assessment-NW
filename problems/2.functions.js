@@ -3,21 +3,15 @@
 * @returns {null}
 */
 function logGreeting(name) {
-  console.log("Hello " + name + "!")
+  console.log(`Hello ${name}!`)
 }
-
-// function logGreeting(name) {
-//   let greeting = "Hello";
-//   let name = "Avery"
-// }
-// console.log(greeting(" Avery!")
 
 /** Returns a custom greeting string in the form "Hello Avery!"
 * @param {string} name - The name of the user to greet
 * @returns {string} - The custom greeting
 */
   function greeting(name) {
-    return "Hello " + name + "!";
+    return `Hello ${name}!`
   }
 
 /** Adds a number to a global variable called globalCount

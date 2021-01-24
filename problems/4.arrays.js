@@ -3,8 +3,13 @@
 * @returns {number} - The average of the first and last values
 */
 function firstAndLastAverage(arr) {
-  return (arr[0] + arr[arr.length-1]) / 2
+  if (arr.length < 2){
+    return null
+  } else {
+    return (arr[0] + arr[arr.length-1]) / 2  
+  }
 }
+
 
 /** Duplicates all values inside an array.
 * Sample input: [1,4,2,5]
